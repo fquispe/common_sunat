@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "a4a9ea83-5124-406d-b01a-a843f9acc6d9",
+		"name": "SUNAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1634429"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhcmxvcyIsImlhdCI6MTY5MzU4MTI5NiwiZXhwIjoxNjkzNTgzMDk2fQ.sTAgRYaoJXh22zpvqMwagVr7bHNwzX7vfFZ5AuREh-M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipo\":\"2\",\r\n    \"ruc\": \"20514492825\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "bearer test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"username\":\"carlos\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/token",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
