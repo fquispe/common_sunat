@@ -11,6 +11,7 @@ Servicio para BackEnd Development based on NodeJs, ExpressJs, MongoDB, RESTFULL.
 ` npm test `
 ___
 # From dockerized (modo local)
+es necesario contar con docker corriendo
 
 ` docker compose rm -f`
 ` docker compose build`
